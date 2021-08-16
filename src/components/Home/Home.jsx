@@ -19,13 +19,13 @@ export default function Home() {
         </figure>
         <figure>
           <img src="./TuneMatch.png"/>
-          <a href="">Github</a>
+          <a href="https://github.com/NC2K/tune-match">Github</a>
           <figcaption>Tune Match</figcaption>
           <p>Description</p>
         </figure>
         <figure>
           <img src="./IoSpio.png"/>
-          <a href="">Github</a>
+          <a href="https://github.com/Gaka-Daka/io-spio">Github</a>
           <figcaption>Io Spio</figcaption>
           <p>Description</p>
         </figure>
