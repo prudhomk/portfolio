@@ -1,0 +1,6 @@
+.Header button {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+}

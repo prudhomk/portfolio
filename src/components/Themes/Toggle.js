@@ -9,6 +9,7 @@ const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
   return (
     <button onClick={toggleTheme} >
+      Switch Theme
     </button>
   );
 };
