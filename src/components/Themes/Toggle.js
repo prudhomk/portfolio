@@ -1,19 +1,21 @@
+/* eslint-disable max-len */
+// Toggle.js
 import React from 'react';
-import PropTypes from 'prop-types';
-import ToggleContainer from 'styled-components';
+import { func, string } from 'prop-types';
+import styled from 'styled-components';
+
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
-
   return (
-    <ToggleContainer lightTheme={isLight} onClick={toggleTheme} />
+    <button onClick={toggleTheme} >
+    </button>
   );
 };
 
 Toggle.propTypes = {
-  theme: PropTypes.string.isRequired,
-  toggleTheme: PropTypes.func.isRequired,
+  theme: string.isRequired,
+  toggleTheme: func.isRequired,
 };
 
 export default Toggle;
-
