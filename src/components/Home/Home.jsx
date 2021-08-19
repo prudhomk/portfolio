@@ -1,5 +1,14 @@
 import React from 'react';
 import styles from './Home.css';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+  diplay: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+`;
+
 
 export default function Home() {
   return (
@@ -9,7 +18,7 @@ export default function Home() {
 
       <p>Good Words : Good Thoughts : Good Deeds</p>
 
-      <div>
+      <StyledDiv>
         <h1>Projects</h1>
         <figure>
           <img src="./Web_Wizard.png"/>
@@ -29,7 +38,7 @@ export default function Home() {
           <figcaption>Io Spio</figcaption>
           <p>Description</p>
         </figure>
-      </div>
+      </StyledDiv>
     </div>
   );
 }
