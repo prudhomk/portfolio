@@ -6,10 +6,15 @@ import styles from '../Resume/Resume.css';
 
 export default function Resume() {
   return (
-    <div className={styles.resume} >
-      <Document file="./editResume.pdf">
-        <Page pageNumber={1}/>
-      </Document>
-    </div>
+    <>
+      <div className={styles.resume} >
+        <Document file="./editResume.pdf">
+          <br/>
+          <br/>
+          <br/>
+          <Page pageNumber={1}/>
+        </Document>
+      </div>
+    </>
   );
 }
