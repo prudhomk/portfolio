@@ -24,6 +24,7 @@ p {
   justify-content: space-evenly;
   background-color: rgb(241, 250, 238);
   width: 100%;
+  overflow: auto;
 }
 
 .Home h1 {
@@ -53,7 +54,8 @@ p {
 }
 
 .Home a {
-  padding: 5px;
+  padding: 2px;
+  margin-left: 15px;
 }
 
 .Home figure {
