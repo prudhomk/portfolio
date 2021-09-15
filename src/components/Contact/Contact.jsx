@@ -1,10 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState } from 'react';
-import dotenv from 'dotenv';
 import { send } from 'emailjs-com';
 import styles from '../Contact/Contact.css';
-
-dotenv.config();
 
 export default function Contact() {
   
@@ -15,13 +12,14 @@ export default function Contact() {
     reply_to: '',
   });
 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     send(
-      'process.env.REACT_APP_SERVICE_ID',
-      'process.env.REACT_APP_TEMPLATE_ID',
-      toSend, 
-      'process.env.REACT_APP_USER_ID'
+      'service_if82dxp',
+      'template_jun1xrr',
+      toSend,
+      'user_8LLoptgbYBnhM8XRmIb0G'
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
