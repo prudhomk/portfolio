@@ -10,7 +10,6 @@ import styles from './Home.css';
 export default function Home() {
   return (
     <>
-      <p>Good Code : Good Thoughts : Good Deeds</p>
       <div className={styles.Home}>
         <div>
           <h1>Projects</h1>
