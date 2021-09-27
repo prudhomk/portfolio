@@ -7,7 +7,7 @@ export default function Header() {
     <div className={styles.Header}>
       <Link to="/">kalan prudhomme</Link>
       <h2>fullstack software developer</h2>
-      <Link to="/resume">Resume</Link>
+      <Link to="/Resume.pdf">Resume</Link>
       <Link to="/contact">Contact Me</Link>
     </div>
   );
