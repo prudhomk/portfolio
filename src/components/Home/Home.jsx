@@ -14,9 +14,11 @@ export default function Home() {
         <div>
           <h1>Projects</h1>
           <figure>
+            
             <figcaption>Chordial</figcaption>
             <a href="https://github.com/Chordial-Music/Chordial-FE" target="_blank" rel="noreferrer"><GitHubIcon className="icon" /></a>
             <a href="https://chordial.netlify.app/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
+            <img src="Chordial.png"/>
             <p>Chordial lets users create songs by offering chord patterns based on harmony and chordal theory. Enjoy the soothing visuals as you effortlessly write music!</p>
           </figure>
           <figure>
@@ -50,6 +52,8 @@ export default function Home() {
           <div className={styles.Resume}>
             <Link to="/resume">HIRE NOW, SUPPLIES LIMITED!</Link>
           </div>
+          
+          
         </div>
       </div>
     </>

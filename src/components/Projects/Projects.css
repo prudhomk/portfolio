@@ -1,0 +1,38 @@
+.projects ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects li img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 2px solid cyan;
+  height: 350px;
+  width: 350px;
+}
+
+.projects li {
+  display: flex;
+  border: 1px red solid;
+}
+
+.projects h2 {
+  padding: 10px;
+  border: 1px red solid;
+}
+.projects li h2 a{
+  margin: 5px;
+  margin-left: 10px;
+}
+
+.projects figure {
+  display: flex;
+  border: 1px solid red;
+}
+
+.projects p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

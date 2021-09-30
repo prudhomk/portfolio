@@ -5,6 +5,7 @@ import Contact from '../Contact/Contact';
 import Resume from '../Resume/Resume';
 import Header from '../Home/Header';
 import Footer from '../Home/Footer';
+import Projects from '../Projects/Projects';
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends Component {
         <Router>
           <Header />
           <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects}/>
           <Route exact path="/resume" component={Resume}/>
           <Route exact path="/contact" component={Contact}/>
           <Footer />
