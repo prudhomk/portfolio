@@ -12,11 +12,23 @@ Orange: rgb(255, 159, 28);
 */
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
+.body {
+  background-color: yellow;
+}
+
+.body h2 {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  font-style: italic;
+  
+}
+
 .body article {
   border: 2px solid orange;
   background-color: white;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .body ul {
@@ -25,8 +37,9 @@ Orange: rgb(255, 159, 28);
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: orange;
+  background-color: yellow;
   border-radius: 10px;
+  
 }
 
 .body ul li {
@@ -38,10 +51,10 @@ Orange: rgb(255, 159, 28);
   position: relative;
   gap: 1rem;
   cursor: pointer;
-  background-color: rgb(168, 218, 220);
+  background-color: white;
   border-radius: 10px;
-  border: 3px solid rgb(231, 29, 54);
-  box-shadow: 0px 0px 10px 0px rgb(231, 29, 54);
+  border: 3px solid black;
+  
 }
 
 .body p {
@@ -50,8 +63,9 @@ Orange: rgb(255, 159, 28);
   align-items: center;
   border-radius: 10px;
   padding: 10px;
-  background-color: rgb(69, 123, 157);
-  color: rgb(253, 255, 252);
+  background-color: rgb(234, 210, 90);
+  color: black;
+  
 }
 
 .body li img {
@@ -59,7 +73,7 @@ Orange: rgb(255, 159, 28);
   background-color: black;
   width: 100px;
   height: 100px;
-  border: 2px solid rgb(231, 29, 54);
+  border: 2px solid black;
   border-radius: 10px;
   margin: 5px;
 }
