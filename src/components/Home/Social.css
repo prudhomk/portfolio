@@ -5,9 +5,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .social {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   box-sizing: border-box;
+}
+
+.social a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .social:focus,
@@ -44,21 +49,6 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.twitter {
-  background-color: #46c1f6;
-  color: #ffffff;
-}
-
-.github {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.linkedin {
-  background-color: rgb(0, 119, 181);
-  color: white;
 }
 
 .wrapper .tooltip {

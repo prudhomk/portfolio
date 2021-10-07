@@ -21,6 +21,11 @@ Light Grey: rgb(139, 140, 137)
   height: 100vh;
 }
 
+.Contact a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .Contact div {
   border: 5px solid rgb(19, 60, 127);
   background-color: rgb(139, 140, 137);
@@ -59,3 +64,4 @@ Light Grey: rgb(139, 140, 137)
   background-color:rgb(19, 60, 127);
   color:rgb(231, 236, 239);
 }
+

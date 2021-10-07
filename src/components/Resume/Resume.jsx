@@ -12,7 +12,7 @@ export default function Resume() {
   return (
     <>
       <div className={styles.resume} >
-        <Document file="./editResume.pdf">
+        <Document file="./Resume.pdf">
           <br/>
           <br/>
           <br/>

@@ -32,6 +32,11 @@ Orange: rgb(255, 159, 28);
 
 }
 
+.body a {
+  color: black;
+  text-decoration: none;
+}
+
 .bio p {
   text-align: center;
   font-size: 30px;
@@ -98,3 +103,5 @@ Orange: rgb(255, 159, 28);
   display: flex;
   justify-content: space-evenly;
 }
+
+

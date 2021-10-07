@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
  
 .title {
-	 background: radial-gradient(circle, rgba(255, 252, 0, 1) 0%, rgba(240, 237, 23, 1) 100%);
+	 background-color: yellow;
 	 height: 100%;
    display: flex;
 	 justify-content: center;

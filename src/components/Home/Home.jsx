@@ -3,10 +3,13 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from './Title.css';
 import bodystyles from './Body.css';
+import animatestyles from './Animate.css';
 import buttonstyles from './Button.css';
 import socialstyles from './Social.css';
 import PublicIcon from '@material-ui/icons/Public';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Home() {
 
@@ -32,15 +35,15 @@ export default function Home() {
           <div className={socialstyles.wrapper}>
             <div className={`${socialstyles.icon} ${socialstyles.twitter}`}>
               <div className={socialstyles.tooltip}>Twitter</div>
-              <span><img className={socialstyles.twitter} src="../../../public/twitter.svg"></img></span>
+              <span> <a className={socialstyles.twitter} href="https://twitter.com/kalanrp" target="_blank" rel="noreferrer"><TwitterIcon className={socialstyles.twitter} /></a></span>
             </div>
             <div className={`${socialstyles.icon} ${socialstyles.github}`}>
               <div className={socialstyles.tooltip}>Github</div>
-              <span><img className={socialstyles.github}></img></span>
+              <span><a className={socialstyles.github} href="https://github.com/prudhomk" target="_blank" rel="noreferrer"><GitHubIcon className={socialstyles.github} /></a></span>
             </div>
             <div className={`${socialstyles.icon} ${socialstyles.linkedin}`}>
               <div className={socialstyles.tooltip}>LinkedIn</div>
-              <span><img className={socialstyles.linkedin}></img></span>
+              <span><a className={socialstyles.linkedin} href="https://www.linkedin.com/in/kalanprudhomme/" target="_blank" rel="noreferrer"><LinkedInIcon className={socialstyles.linkedin} /></a></span>
             </div>
           </div>
         </div>
@@ -59,7 +62,7 @@ export default function Home() {
             <h2>Projects</h2>
           
          
-            <li>
+            <li className={animatestyles.shakebottom}>
               <img src="./Chordial.png"/>
               <div>
                 <h3>Chordial</h3>
@@ -71,7 +74,7 @@ export default function Home() {
               <p>Chordial lets users create songs by offering chord patterns based on harmony and chordal theory. Enjoy the soothing visuals as you effortlessly write music!</p>
             </li>
     
-            <li>
+            <li className={animatestyles.jellovertical}>
               <img src="./Web_Wizard.png"/>
               <div>
                 <h3>WebWizard</h3>
@@ -93,7 +96,7 @@ export default function Home() {
               </div>
               <p>Tune Match utilizes the iTunes API to output randomized top hits to test your music knowledge throughout the decades! Users have control on when the timer starts and can playback collections previous played.</p>
             </li>
-            <li>
+            <li className={animatestyles.heartbeat}>
               <img src="./IoSpio.png"/>
               <div>
                 <h3>Io Spio</h3>
@@ -107,8 +110,18 @@ export default function Home() {
           </ul>
         </div>
         <div className={buttonstyles.button}>
-          <button onClick={handleContact}>Get in Touch</button>
-          <button onClick={handleResume}>My Resume</button>
+          <ul>
+            <li onClick={handleContact}>
+              Get in Touch
+              <span></span><span></span><span></span><span></span>
+            </li>
+            <li onClick={handleResume}>
+              Resume
+              <span></span><span></span><span></span><span></span>
+            </li>
+          </ul>
+          {/* <button onClick={handleContact}>Get in Touch</button>
+          <button onClick={handleResume}>My Resume</button> */}
         </div>
       </div>
     </>
