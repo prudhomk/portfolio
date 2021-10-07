@@ -1,9 +1,11 @@
+/* eslint-disable max-len */
 /* eslint-disable no-undef */
 const webpack = require('webpack');
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const dotenv = require('dotenv');
 
 const env = Object.entries({
   ...require('dotenv').config(),
@@ -29,6 +31,9 @@ module.exports = {
     new HtmlPlugin({ template: './src/index.html' }),
     new CleanWebpackPlugin(),
     new webpack.EnvironmentPlugin(env),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.config().parsed) // it will automatically pick up key values from .env file
+    }),
     new CopyPlugin({
       patterns: [{ from: 'public' }],
     }),

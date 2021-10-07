@@ -5,19 +5,16 @@ exports[`App component renders App 1`] = `
   <div
     class="Header"
   >
-    <button>
-      Switch Theme
-    </button>
-  </div>
-  <div
-    class="Home"
-  >
     <h1>
-      KALAN PRUDHOMME
+      kalan prudhomme
     </h1>
     <h2>
       fullstack software developer
     </h2>
+  </div>
+  <div
+    class="Home"
+  >
     <p>
       Good Words : Good Thoughts : Good Deeds
     </p>
@@ -76,6 +73,13 @@ exports[`App component renders App 1`] = `
         </p>
       </figure>
     </div>
+  </div>
+  <div
+    class="Header"
+  >
+    <h1>
+      Placeholder
+    </h1>
   </div>
 </DocumentFragment>
 `;
