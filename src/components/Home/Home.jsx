@@ -14,7 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Home() {
 
   const history = useHistory();
-  
+
   const handleContact = () => {
     history.push('/contact');
   };
@@ -50,19 +50,32 @@ export default function Home() {
 
         <div className={bodystyles.bio}>
           <img src="funny picture"/>
-          <p>A kid who never grew up, 
-            always excited to learn something new, 
-            Kalan is a fullstack software developer who 
-            loves coming up with build ideas and 
-            solving problems that come his way.
+          <p>
+            A Fullstack Developer interested in continous learning of new technologies and novel designs.  
+            Always eager to try out a new method or solve a bug, I love the endless creativity coding allows me.
+            Currently Playing with: AWS, Three.Js, Kubernetes, Dynamic SQL
           </p>
+        </div>
+        <div className={bodystyles.tech}>
+          <h2>Tech Stack</h2>
+          <div>
+            <span><img src="./html5.png"></img></span>
+            <span><img src="./css3.png"></img></span>
+            <span><img src="./javascript.png"></img></span>
+            <span><img src="./node.png"></img></span>
+            <span><img src="./react.png"></img></span>
+            <span><img src ="./jest.png"></img></span>
+            <span><img src="./postgre.png"></img></span>
+            <span><img src="./heroku.png"></img></span>
+            <span><img src="./netlify.png"></img></span>
+          </div>
         </div>
         <div>
           <ul>
             <h2>Projects</h2>
           
          
-            <li className={animatestyles.shakebottom}>
+            <li className={animatestyles.shadowpop}>
               <img src="./Chordial.png"/>
               <div>
                 <h3>Chordial</h3>
@@ -74,7 +87,7 @@ export default function Home() {
               <p>Chordial lets users create songs by offering chord patterns based on harmony and chordal theory. Enjoy the soothing visuals as you effortlessly write music!</p>
             </li>
     
-            <li className={animatestyles.jellovertical}>
+            <li className={animatestyles.shadowpop}>
               <img src="./Web_Wizard.png"/>
               <div>
                 <h3>WebWizard</h3>
@@ -83,9 +96,9 @@ export default function Home() {
                   <a href="https://addons.mozilla.org/en-US/firefox/addon/web-wizard/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
                 </div>
               </div>
-              <p>Design the web your way with Web Wizard! A Firefox extension that puts CSS design in the user's hands.</p>
+              <p>A Firefox extension that allows users to customize any webpage by targeting the HTML and CSS.  Change the background color, font color, font size, or even change text content using a JSON dictionary.</p>
             </li>
-            <li>
+            <li className={animatestyles.shadowpop}>
               <img src="./TuneMatch.png"/>
               <div>
                 <h3>Tune Match</h3>
@@ -96,7 +109,7 @@ export default function Home() {
               </div>
               <p>Tune Match utilizes the iTunes API to output randomized top hits to test your music knowledge throughout the decades! Users have control on when the timer starts and can playback collections previous played.</p>
             </li>
-            <li className={animatestyles.heartbeat}>
+            <li className={animatestyles.shadowpop}>
               <img src="./IoSpio.png"/>
               <div>
                 <h3>Io Spio</h3>
@@ -105,7 +118,7 @@ export default function Home() {
                   <a href="https://gaka-daka.github.io/io-spio/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
                 </div>
               </div>
-              <p>A modern version of "I-Spy", a hidden object game application. Created in HTML, CSS, and vanilla JavaScript within a 4-day sprint. </p>
+              <p>A modern version of "I-Spy", a hidden object game application. Created in HTML, CSS, and vanilla JavaScript within a 4-day sprint. Users can play a variety of maps, and compete with other players on the leaderboard for the best score and fastest time!</p>
             </li>
           </ul>
         </div>

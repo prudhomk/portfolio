@@ -58,6 +58,7 @@ Light Grey: rgb(139, 140, 137)
   background-color: rgb(163, 206, 241);
   margin: 10px;
   cursor: pointer;
+  font-family: 'Sawarabi Mincho', sans-serif;
 }
 
 .Contact button:hover {
