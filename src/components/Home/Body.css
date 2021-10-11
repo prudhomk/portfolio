@@ -13,8 +13,15 @@ Orange: rgb(255, 159, 28);
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fredoka+One&display=swap');
 
+body, html {
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+}
+
 .body {
   background-color: yellow;
+  height: 50vh;
 }
 
 .body h2 {
@@ -27,10 +34,10 @@ Orange: rgb(255, 159, 28);
 .bio {
   margin-left: 10%;
   margin-right: 10%;
-  border: 2px solid orange;
+  border: 2px solid black;
   background-color: white;
   border-radius: 20px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .body a {
@@ -78,9 +85,10 @@ Orange: rgb(255, 159, 28);
   background-color: black;
   width: 100px;
   height: 100px;
-  border: 2px solid black;
+  border: 1px dashed black;
   border-radius: 10px;
   margin: 5px;
+  padding: 2px;
 }
 
 .body li p {
@@ -107,19 +115,28 @@ Orange: rgb(255, 159, 28);
   display: flex;
   flex-wrap: wrap;
   background-color: white;
-  height: 450px;
+  height: auto;
+  border: 2px solid black;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.tech h1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-decoration: underline;
+  font-family: 'Fredoka One';
 }
 
 .tech img {
   margin: 10px;
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 78px;
 }
 
 .links {

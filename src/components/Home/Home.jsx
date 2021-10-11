@@ -28,11 +28,12 @@ export default function Home() {
     <>
       <div className={bodystyles.body}>
         <div className={styles.title}>
-          <h1><span>"KALAN</span><span>PRUDHOMME"</span></h1>
+          <h1><span>KALAN</span><span>PRUDHOMME</span></h1>
         </div>
-
+    
         <div className={socialstyles.social}>
           <div className={socialstyles.wrapper}>
+            <h1>Follow Me:</h1>
             <div className={`${socialstyles.icon} ${socialstyles.twitter}`}>
               <div className={socialstyles.tooltip}>Twitter</div>
               <span> <a className={socialstyles.twitter} href="https://twitter.com/kalanrp" target="_blank" rel="noreferrer"><TwitterIcon className={socialstyles.twitter} /></a></span>
@@ -53,11 +54,12 @@ export default function Home() {
           <p>
             A Fullstack Developer interested in continous learning of new technologies and novel designs.  
             Always eager to try out a new method or solve a bug, I love the endless creativity coding allows me.
+            <br/>
             Currently Playing with: AWS, Three.Js, Kubernetes, Dynamic SQL
           </p>
         </div>
         <div className={bodystyles.tech}>
-          <h2>Tech Stack</h2>
+          <h1>Tech Stack:</h1>
           <div>
             <span><img src="./html5.png"></img></span>
             <span><img src="./css3.png"></img></span>
