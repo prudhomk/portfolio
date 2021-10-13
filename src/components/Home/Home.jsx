@@ -19,11 +19,6 @@ export default function Home() {
     history.push('/contact');
   };
 
-  const handleResume = () => {
-    history.push('/Resume.pdf');
-    window.location.reload();
-  };
-
   return (
     <>
       <div className={bodystyles.body}>
