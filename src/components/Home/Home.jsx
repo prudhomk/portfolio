@@ -144,17 +144,19 @@ export default function Home() {
 
         <div className={buttonstyles.button}>
           <ul>
-            <li onClick={handleContact}>
-              Get in Touch
-              <span></span><span></span><span></span><span></span>
-            </li>
-            <li onClick={handleResume}>
-              Resume
-              <span></span><span></span><span></span><span></span>
-            </li>
+            <a>
+              <li onClick={handleContact}>
+                Get in Touch
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </a>
+            <a href="./Resume.pdf">
+              <li>
+                Resume
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </a>
           </ul>
-          {/* <button onClick={handleContact}>Get in Touch</button>
-          <button onClick={handleResume}>My Resume</button> */}
         </div>
       </div>
     </>
