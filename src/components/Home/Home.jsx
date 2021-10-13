@@ -49,15 +49,21 @@ export default function Home() {
           </div>
         </div>
 
+        <div className={bodystyles.spacer}></div>
+
         <div className={bodystyles.bio}>
-          <img src="funny picture"/>
-          <p>
-            A Fullstack Developer interested in continous learning of new technologies and novel designs.  
-            Always eager to try out a new method or solve a bug, I love the endless creativity coding allows me.
-            <br/>
-            Currently Playing with: AWS, Three.Js, Kubernetes, Dynamic SQL
-          </p>
+          <div className={animatestyles.slide}>
+            <img src="/profile.jpg"/>
+            <p>
+            Hello there!  I'm a Fullstack Developer who loves learning new technologies and novel code implementation.  
+            Always eager to try out a new method or solve a bug, I love the endless creativity coding allows me.  Away from the computer
+            I enjoy playing Piano, drawing and baking pastries.
+            </p>
+          </div>
         </div>
+
+        <div className={bodystyles.spacer}></div>
+
         <div className={bodystyles.tech}>
           <h1>Tech Stack:</h1>
           <div>
@@ -72,11 +78,12 @@ export default function Home() {
             <span><img src="./netlify.png"></img></span>
           </div>
         </div>
+
+        <div className={bodystyles.spacer}></div>
+        
         <div>
           <ul>
             <h2>Projects</h2>
-          
-         
             <li className={animatestyles.shadowpop}>
               <img src="./Chordial.png"/>
               <div>
@@ -88,7 +95,17 @@ export default function Home() {
               </div>
               <p>Chordial lets users create songs by offering chord patterns based on harmony and chordal theory. Enjoy the soothing visuals as you effortlessly write music!</p>
             </li>
-    
+            <li className={animatestyles.shadowpop}>
+              <img src="./jojostar.png"/>
+              <div>
+                <h3>Jojo's Bizarre API</h3>
+                <div className={bodystyles.links}>
+                  <a href="https://github.com/prudhomk/jojoApi" target="_blank" rel="noreferrer"><GitHubIcon className="icon" /></a>
+                  <a href="https://jojos-bizarre-api.netlify.app/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
+                </div>
+              </div>
+              <p>A RESTful API featuring dynamic SQL queries and a feature-rich frontend, centered around the charactes from Jojo's Bizarre Adventure.  Watch out for enemy stands!</p>
+            </li>
             <li className={animatestyles.shadowpop}>
               <img src="./Web_Wizard.png"/>
               <div>
@@ -120,10 +137,11 @@ export default function Home() {
                   <a href="https://gaka-daka.github.io/io-spio/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
                 </div>
               </div>
-              <p>A modern version of "I-Spy", a hidden object game application. Created in HTML, CSS, and vanilla JavaScript within a 4-day sprint. Users can play a variety of maps, and compete with other players on the leaderboard for the best score and fastest time!</p>
+              <p>A modern version of "I-Spy", a hidden object game application. Users can play a variety of maps, and compete with other players on the leaderboard for the best score and fastest time!</p>
             </li>
           </ul>
         </div>
+
         <div className={buttonstyles.button}>
           <ul>
             <li onClick={handleContact}>
