@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { send } from 'emailjs-com';
 import styles from './Contact.css';
+import buttonstyles from './HomeButton.css';
+import animatestyles from '../Home/Animate.css';
 
 export default function Contact() {
 
@@ -50,15 +52,23 @@ export default function Contact() {
               <input type="text" name="from_name" value={toSend.from_name} onChange={handleChange} placeholder="From name" required/>
             </label> 
             <label>Message
+              <br/>
               <textarea name="message" value={toSend.message} onChange={handleChange} placeholder="Your Message"/>
             </label>
             <label>Your Email
               <input type="text" name="reply_to" value={toSend.reply_to} onChange={handleChange} placeholder="Your Email" required/>
             </label>
-            <button>Submit</button>
+            <button className={animatestyles.heartbeat}>Submit</button>
           </div>
         </form>
-        <button className={styles.button} onClick={handleHome}>Return to Mainpage</button>
+        <div className={buttonstyles.button}>
+          <ul>
+            <li onClick={handleHome}>
+              home
+              <span></span><span></span><span></span><span></span>
+            </li>
+          </ul>
+        </div>
       </div>
       
     </>

@@ -17,19 +17,11 @@ Light Grey: rgb(139, 140, 137)
   text-align: center;
   padding: 10px;
   font-family: 'Sawarabi Mincho', sans-serif;
-  text-decoration: underline;
   height: 100vh;
 }
 
-.Contact a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.Contact div {
-  border: 5px solid rgb(19, 60, 127);
-  background-color: rgb(139, 140, 137);
-  border-radius: 10px;
+.Contact form {
+ border-radius: 10px;
 }
 
 .Contact label {
@@ -41,7 +33,9 @@ Light Grey: rgb(139, 140, 137)
   flex-direction: column;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: underline;
   margin: 5px;
+  padding: 5px;
 }
 
 .Contact input {
@@ -51,13 +45,15 @@ Light Grey: rgb(139, 140, 137)
 }
 
 .Contact button {
-  size: 20px;
-  width: auto;
-  height: 40px;
+  width: 12em;
+  height: 3em;
   border-radius: 10px;
   background-color: rgb(163, 206, 241);
   margin: 10px;
   cursor: pointer;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .Contact button:hover {

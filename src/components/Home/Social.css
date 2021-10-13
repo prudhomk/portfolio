@@ -8,6 +8,15 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
+  background-color: yellow;
+}
+
+.social h1 {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social a {
@@ -34,11 +43,12 @@
 }
 
 .wrapper .icon {
+  transform: scale(1.5);
   position: relative;
   background-color: #ffffff;
   border-radius: 50%;
   padding: 15px;
-  margin: 10px;
+  margin: 40px;
   width: 50px;
   height: 50px;
   font-size: 18px;

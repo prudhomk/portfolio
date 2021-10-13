@@ -13,38 +13,55 @@ Orange: rgb(255, 159, 28);
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Fredoka+One&display=swap');
 
+body, html {
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+}
+
 .body {
   background-color: yellow;
 }
 
 .body h2 {
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 40px;
   font-style: italic;
   font-family: 'Fredoka One';
-}
-
-.bio {
-  margin-left: 10%;
-  margin-right: 10%;
-  border: 2px solid orange;
-  background-color: white;
-
+  text-decoration: underline;
 }
 
 .body a {
   color: black;
   text-decoration: none;
+  transform: scale(1.2);
+  padding: 5px;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 350px;
 }
 
 .bio p {
-  text-align: center;
+  padding: 100px;
   font-size: 30px;
   font-family: 'Fredoka One';
+  shape-outside: circle(50%);
 }
 
 .bio img {
-  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 0 25px 5px 0;
+    float: left;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
 }
 
 .body ul {
@@ -73,13 +90,13 @@ Orange: rgb(255, 159, 28);
 
 
 .body li img {
-  margin-left: 100px;
   background-color: black;
   width: 100px;
   height: 100px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
+  padding: 2px;
 }
 
 .body li p {
@@ -90,6 +107,7 @@ Orange: rgb(255, 159, 28);
   text-align: center;
   font-family: 'Acme', sans-serif;
   background-color: gold;
+  padding: 15px;
 }
 
 .body li h3 {
@@ -97,6 +115,36 @@ Orange: rgb(255, 159, 28);
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.tech h1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-decoration: underline;
+  font-family: 'Fredoka One';
+}
+
+.tech img {
+  margin: 10px;
+  width: 120px;
+  height: 90px;
 }
 
 .links {
@@ -104,4 +152,6 @@ Orange: rgb(255, 159, 28);
   justify-content: space-evenly;
 }
 
-
+.spacer {
+  height: 150px;
+}
