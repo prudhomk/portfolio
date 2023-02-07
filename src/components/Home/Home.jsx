@@ -25,7 +25,7 @@ export default function Home() {
         <div className={styles.title}>
           <h1><span>KALAN</span><span>PRUDHOMME</span></h1>
         </div>
-    
+
         <div className={socialstyles.social}>
           <div className={socialstyles.wrapper}>
             <h1>Follow Me:</h1>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className={animatestyles.slide}>
             <img src="/profile.jpg"/>
             <p>
-            Hello there!  I'm a Fullstack Developer who loves learning new technologies and novel code implementation.  
+            Hello there!  I'm a Fullstack Developer who loves learning new technologies and novel code implementation.
             Always eager to try out a new method or solve a bug, I love the endless creativity coding allows me.  Away from the computer
             I enjoy playing Piano, drawing and baking pastries.
             </p>
@@ -75,10 +75,21 @@ export default function Home() {
         </div>
 
         <div className={bodystyles.spacer}></div>
-        
+
         <div>
           <ul>
             <h2>Projects</h2>
+            <li className={animatestyles.shadowpop}>
+              <img src="./PokeTori.png"/>
+              <div>
+                <h3>PokeTori</h3>
+                <div className={bodystyles.links}>
+                  <a href="https://github.com/prudhomk/poketori" target="_blank" rel="noreferrer"><GitHubIcon className="icon" /></a>
+                  <a href="https://poketori.netlify.app/" target="_blank" rel="noreferrer"><PublicIcon className="icon" /></a>
+                </div>
+              </div>
+              <p>Poketori is a web version of the game しりとり (shiritori), also known as word-chain in other parts of the world. Chain together as many Pokemon names as you can, in 5 different languages!</p>
+            </li>
             <li className={animatestyles.shadowpop}>
               <img src="./Chordial.png"/>
               <div>
